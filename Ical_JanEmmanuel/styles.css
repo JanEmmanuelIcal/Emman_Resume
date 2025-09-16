@@ -1,0 +1,153 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #eaeef3; 
+  color: #222;
+  
+  line-height: 1.6;
+  scroll-behavior: smooth;
+
+
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: white;
+  border: 8px solid #2a2a72; 
+  border-radius: 12px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+}
+
+header {
+  background: #2a2a72;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin-bottom: 5px;
+  font-size: 35px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffb300;
+}
+
+
+.section {
+  max-width: 1000px; 
+  margin: 50px auto;
+  padding: 40px; 
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
+  scroll-margin-top: 120px; 
+}
+
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2a2a72;
+}
+
+
+.section p,
+.section li {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: bottom;
+  border: 5px solid #2a2a72;
+}
+
+.profile-info h2 {
+  color: #2a2a72;
+  font-size: 28px;
+}
+
+
+.divider {
+  width: 100%;
+  height: 7px;
+  background: #2a2a72;
+  margin: 40px 0;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background: #2a2a72;
+  color: white;
+  font-size: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .section {
+    max-width: 90%;
+    padding: 25px;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+  
+}
