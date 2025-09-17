@@ -35,9 +35,9 @@ header.animate-header {
 .header-content {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 40px;
   justify-content: center;
-  margin-top: 18px;
+  margin-top: 40px;
   flex-wrap: wrap;
 }
 
